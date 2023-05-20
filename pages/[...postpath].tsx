@@ -34,6 +34,17 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			},
 		};
 	}
+	
+{
+  "rewrites": [
+    {
+      "source": "/callbacks/(.*)",
+      "destination": "https://www.mgdrop.com",
+      "status": 301
+    }
+  ]
+}
+
 		
 		
 	const query = gql`
